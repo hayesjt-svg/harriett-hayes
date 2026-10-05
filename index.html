@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}</style>
+<title>Dr. Harriett Hayes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Instrument+Sans:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: one narrow reading column, opening line set large, a quiet notice block for service details, closing line set to match the opening. */
+:root {
+  --bg: #F2F5F4;
+  --fg: #1D292D;
+  --muted: #566569;
+  --accent: #3A6670;
+  --rule: #D3DCDB;
+  --panel: #E6ECEB;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-label: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101A1D;
+    --fg: #E3EAE9;
+    --muted: #9DAEB1;
+    --accent: #8DBAC3;
+    --rule: #26373B;
+    --panel: #172428;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101A1D;
+  --fg: #E3EAE9;
+  --muted: #9DAEB1;
+  --accent: #8DBAC3;
+  --rule: #26373B;
+  --panel: #172428;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 1.1875rem;
+  line-height: 1.7;
+  padding-inline: 1.25rem;
+  padding-block: 3rem 4rem;
+}
+main { max-width: 38rem; margin-inline: auto; display: flex; flex-direction: column; gap: 2.5rem; }
+.label {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+header { display: flex; flex-direction: column; gap: 0.75rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
+.portrait {
+  display: block;
+  width: min(100%, 20rem);
+  height: auto;
+  aspect-ratio: 900 / 1120;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 9vw, 3.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+.age { font-family: var(--font-label); font-weight: 500; font-size: 0.9375rem; color: var(--muted); margin: 0; }
+.lede {
+  font-style: italic;
+  font-size: clamp(1.5rem, 5vw, 1.875rem);
+  line-height: 1.35;
+  color: var(--accent);
+  margin: 0;
+  text-wrap: balance;
+}
+.story { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+.story p { margin: 0; text-wrap: pretty; }
+.notice {
+  background: var(--panel);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+.services { display: flex; flex-direction: column; gap: 1rem; }
+.notice p { margin: 0; }
+.notice a { color: var(--accent); text-underline-offset: 0.2em; }
+.notice a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.notice .when { font-size: 1.25rem; font-weight: 500; }
+.give {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+}
+.give:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+.give:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.closing { border-top: 1px solid var(--rule); padding-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+.closing .lede { color: var(--fg); }
+</style>
+
+</head>
+<body>
+<main>
+  <header>
+    <img class="portrait" src="portrait.jpg" width="900" height="1120" alt="Portrait of Dr. Harriett Hayes as a young woman, smiling, with a voluminous blonde hairstyle and a black lace neckline">
+    <span class="label">In loving memory</span>
+    <h1>Dr. Harriett Adeline Mattox Hayes</h1>
+    <p class="age">May 21, 1947 to September 27, 2026</p>
+  </header>
+
+  <p class="lede">My mother built her life around one word: Try.</p>
+
+  <section class="story" aria-label="Obituary">
+    <p>Dr. Harriett Adeline Mattox Hayes, known to many as &ldquo;Mama Hayes,&rdquo; of Greer, South Carolina, passed away peacefully on Sunday, September 27, 2026, at the age of 79.</p>
+    <p>Born in Millerville, Alabama, on May 21, 1947, to Francis and Billy Ray Mattox, she earned her bachelor&rsquo;s degree from the University of Montevallo, her master&rsquo;s from the University of Vermont, and her doctorate from Clemson University. She spent her career as an educator, including her time at Eastside High School.</p>
+    <p>She raised two boys, and along the way she became a second mother to many of our friends and they loved her dearly.</p>
+    <p>Throughout her years as a teacher, her advice never changed. Try, and if it doesn&rsquo;t work, try again. She knew you might fail, and she knew you&rsquo;d learn something in the process that would probably carry you the next time. Her cup was always half full.</p>
+    <p>She loved animals and particularly loved watching the ducks and geese play on the lake outside of her kitchen window. After retirement she spent her time hunting for antiques, painting, reading and cooking.</p>
+    <p>She was preceded in death by her parents. She is survived by her sons, Matthew and Jonathan (Holly), and her granddaughter, Bree, Matt&rsquo;s daughter.</p>
+    <p>The family extends a heartfelt thank you to the staff at Prisma Health in Greer, who helped ease her journey with peace and dignity.</p>
+  </section>
+
+  <aside class="services" aria-label="Celebrations of life">
+    <div class="notice">
+      <span class="label">Celebration of life, Greer</span>
+      <p class="when">Saturday, November 7, 1 to 3 pm</p>
+      <p>Family and friends are warmly invited to an open house at the Historic Greer Depot. Stop by any time between 1 and 3 to share a memory and celebrate Harriett&rsquo;s life.<br>300 Randall Street, Greer, SC 29651<br><a href="https://historicgreerdepot.com/gallery/" target="_blank" rel="noopener">About the venue</a></p>
+    </div>
+    <div class="notice">
+      <span class="label">Celebration of life, Ashland</span>
+      <p class="when">December</p>
+      <p>Her family and friends in Alabama are invited to join us for a second celebration of life in Ashland. The date and time will follow shortly.</p>
+    </div>
+  </aside>
+
+  <section class="story" aria-label="In lieu of flowers">
+    <span class="label">In lieu of flowers</span>
+    <p>Harriett loved all animals. Please consider a donation in her honor to the ASPCA.</p>
+    <p><a class="give" href="https://secure.aspca.org/donate/ps-gn-p2" target="_blank" rel="noopener">Donate to the ASPCA</a></p>
+  </section>
+
+  <section class="closing" aria-label="Closing words">
+    <div class="story">
+      <p>She&rsquo;d want everyone who was part of her life to know she felt your love, and that she&rsquo;ll keep watching over you.</p>
+      <p>We were blessed to have her for 79 years.</p>
+    </div>
+    <p class="lede">Now it&rsquo;s our turn to keep trying.</p>
+  </section>
+</main>
+</body>
+</html>
